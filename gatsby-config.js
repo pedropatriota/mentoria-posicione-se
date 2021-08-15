@@ -11,10 +11,10 @@ module.exports = {
     info: {
       tel: '(24)3336-1761',
       urlTel: 'tel.:+552433361761',
-      whats: '(24)99314-3757',
+      whats: '(24)99947520',
       email: 'clinicaallure@outlook.com',
       urlEmail: 'mailto:clinicaallure@outlook.com',
-      urlWhats: 'https://wa.me/5524993143757',
+      urlWhats: 'https://wa.me/5524999947520',
       address:
         'R. Trinta e Três, 164 - Vila Santa Cecília, Volta Redonda - RJ, 27261-310',
       urlAddress: 'https://goo.gl/maps/dZUJRuubmu9RC9F48',

@@ -7,12 +7,15 @@ export const Ul = styled.ul`
   display: flex;
   width: 100%;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: space-between;
+  gap: 10px;
   text-transform: uppercase;
   margin-top: 10px;
   flex-wrap: wrap;
 
   @media (min-width: 620px) {
+    justify-content: flex-start;
+    gap: 0;
     margin-top: 0;
     width: 80%;
     justify-content: flex-end;
