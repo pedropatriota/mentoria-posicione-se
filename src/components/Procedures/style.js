@@ -28,57 +28,21 @@ export const SliderWrapper = styled.div`
   }
 `
 
-// export const Image = styled.div`
-//   overflow: hidden;
-//   width: 200px;
-//   height: 200px;
-//   transition: 0.3s ease-in;
-
-//   h3 {
-//     text-align: center;
-//     color: #333;
-//     text-transform: uppercase;
-//     opacity: 0;
-//     transition: 400ms cubic-bezier(0.55, 0.055, 0.675, 0.19);
-//     transition-property: transform, opacity, font-size;
-//   }
-//   &:hover h3 {
-//     opacity: 1;
-//     font-size: 18px;
-//     font-weight: 400;
-//     transform: translateY(-100px);
-//     pointer-events: none;
-//   }
-// `
-
-// export const ProcImage = styled(Img)`
-//   margin: 0 10px;
-//   height: 100%;
-//   transition: all 0.4s ease-in-out;
-//   &:hover {
-//     opacity: 0.3;
-//     background: rgba(0, 0, 0, 0.2);
-//     transform: scale(1.2);
-//   }
-//   @media (min-width: 480px) {
-//     min-height: 150px;
-//   }
-// `
-
 export const Cards = styled.div`
   min-width: 50%;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 20px;
+  margin-bottom: 30px;
 
   @media (min-width: 768px) {
     min-width: 100%;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
   }
 `
 export const Description = styled.div`
   background: #a08236;
-  height: 205px;
+  height: 176px;
   color: #fff;
   padding: 10px;
   transition: all 0.4s ease;
@@ -87,10 +51,7 @@ export const Description = styled.div`
 
   @media (min-width: 768px) {
     padding: 20px;
-    height: 280px;
-  }
-  @media (min-width: 920px) {
-    overflow-y: hidden;
+    height: 240px;
   }
 
   p:first-child {
@@ -126,11 +87,17 @@ export const CardInner = styled.div`
 export const FlipCard = styled.div`
   background-color: transparent;
   max-width: 240px;
-  height: 205px;
+  height: 176px;
   perspective: 1000px;
 
+  @media (max-width: 768px) {
+    &:last-child {
+      display: none;
+    }
+  }
+
   @media (min-width: 768px) {
-    height: 280px;
+    height: 240px;
   }
 
   &:hover {
@@ -168,7 +135,7 @@ export const Title = styled.div`
   font-weight: 300;
   text-align: center;
   font-family: Philosopher;
-  font-size: min(20px, 5vw);
+  font-size: min(20px, 4vw);
   font-style: normal;
   font-weight: 900;
   line-height: 27px;

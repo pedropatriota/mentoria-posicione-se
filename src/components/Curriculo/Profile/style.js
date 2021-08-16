@@ -6,15 +6,16 @@ export const ImageWrapper = styled.div`
   align-items: center;
   flex-direction: column;
   width: 100%;
-  margin-bottom: 95px;
+  margin-bottom: 30px;
 
-  @media (min-width: 620px) {
+  @media (min-width: 768px) {
     flex-direction: row;
+    margin-bottom: 95px;
   }
 
   div {
     max-width: 100%;
-    @media (min-width: 620px) {
+    @media (min-width: 768px) {
       max-width: 50%;
     }
 

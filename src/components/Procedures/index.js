@@ -1,7 +1,6 @@
 import React from 'react'
 import { useStaticQuery, graphql } from 'gatsby'
-import FlipCard from 'react-png-flipcard'
-import { isMobileOnly } from 'react-device-detect'
+
 import * as S from './style'
 
 export default () => {
@@ -46,28 +45,6 @@ export default () => {
               </S.CardBack>
             </S.CardInner>
           </S.FlipCard>
-
-          // <FlipCard
-          //   key={item.id}
-          //   front={
-          //     <S.Card>
-          //       <img src={item.image} alt='' />
-          //       <S.Title>{item.title}</S.Title>
-          //     </S.Card>
-          //   }
-          //   back={
-          //     <S.Card>
-          //       <S.Description>
-          //         <p>{item.title}</p>
-          //         <p>{item.description}</p>
-          //       </S.Description>
-          //     </S.Card>
-          //   }
-          //   direction='horizontal'
-          //   margin={0}
-          //   width={isMobileOnly ? 140 : 240}
-          //   height={isMobileOnly ? 180 : 280}
-          // />
         ))}
       </S.Cards>
     </S.SliderWrapper>
