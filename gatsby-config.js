@@ -60,7 +60,7 @@ module.exports = {
         id: 6,
         title: 'Implante Mamário',
         image: `/po06.png`,
-        description: `Os implantes são utilizados para dar volume a varias regiões do corpo, como seios e glúteos, por exemplo.`,
+        description: `Os implantes são utilizados para dar volume a várias regiões do corpo, como seios e glúteos, por exemplo.`,
       },
       {
         id: 7,
