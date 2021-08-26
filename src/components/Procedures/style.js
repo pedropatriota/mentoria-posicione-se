@@ -42,7 +42,7 @@ export const Cards = styled.div`
 `
 export const Description = styled.div`
   background: #a08236;
-  height: 176px;
+  height: 205px;
   color: #fff;
   padding: 10px;
   transition: all 0.4s ease;
@@ -51,7 +51,7 @@ export const Description = styled.div`
 
   @media (min-width: 768px) {
     padding: 20px;
-    height: 240px;
+    height: 280px;
   }
 
   p:first-child {
@@ -78,6 +78,7 @@ export const Description = styled.div`
 export const CardInner = styled.div`
   position: relative;
   width: 100%;
+  height: 100%;
   text-align: center;
   transition: transform 0.6s;
   transform-style: preserve-3d;
@@ -87,17 +88,19 @@ export const CardInner = styled.div`
 export const FlipCard = styled.div`
   background-color: transparent;
   max-width: 240px;
-  height: 176px;
+  height: 280px;
   perspective: 1000px;
 
   @media (max-width: 768px) {
+    height: 205px;
+
     &:last-child {
       display: none;
     }
   }
 
   @media (min-width: 768px) {
-    height: 240px;
+    height: 280px;
   }
 
   &:hover {
@@ -109,6 +112,7 @@ export const FlipCard = styled.div`
 export const ReusableCard = css`
   position: absolute;
   max-width: 100%;
+  height: 100%;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   border-radius: 4px;
@@ -118,8 +122,8 @@ export const CardFront = styled.div`
   ${ReusableCard}
 
   img {
-    max-width: 100%;
-    height: auto;
+    width: 100%;
+    height: 100%;
     border-radius: 4px;
   }
 `
