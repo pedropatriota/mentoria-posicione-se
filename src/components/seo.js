@@ -45,6 +45,7 @@ function SEO({ description, lang, meta, title, image }) {
           name: `description`,
           content: metaDescription,
         },
+
         {
           property: `og:title`,
           content: title,
@@ -82,7 +83,12 @@ function SEO({ description, lang, meta, title, image }) {
           content: metaDescription,
         },
       ].concat(meta)}
-    />
+    >
+      <meta
+        name='facebook-domain-verification'
+        content='0t7pky3rmjig4mrosz6kz14kqt86tl'
+      />
+    </Helmet>
   )
 }
 

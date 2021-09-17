@@ -87,6 +87,12 @@ module.exports = {
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-anchor-links`,
     {
+      resolve: `gatsby-plugin-facebook-pixel`,
+      options: {
+        pixelId: '1214612195706304',
+      },
+    },
+    {
       resolve: `gatsby-plugin-scroll-reveal`,
       options: {
         threshold: 0.1, // Percentage of an element's area that needs to be visible to launch animation

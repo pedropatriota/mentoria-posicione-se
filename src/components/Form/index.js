@@ -72,7 +72,6 @@ function FormData() {
             validateOnBlur={false}
           >
             {({ values }) => {
-              console.log(values)
               return (
                 <Form
                   style={{ width: '100%' }}

@@ -8,7 +8,6 @@ import SEO from '../components/seo'
 import ClinicHeader from '../components/Clinic/HeaderSection'
 import ImagesGrid from '../components/Clinic/ImagesGrid'
 import WhereWeAre from '../components/WhereWeAre'
-import Form from '../components/Form'
 
 const IndexPage = () => {
   const { site } = useStaticQuery(
