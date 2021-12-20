@@ -1006,6 +1006,13 @@
   dependencies:
     regenerator-runtime "^0.13.4"
 
+"@babel/runtime@^7.15.4":
+  version "7.16.5"
+  resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.16.5.tgz#7f3e34bf8bdbbadf03fbb7b1ea0d929569c9487a"
+  integrity sha512-TXWihFIS3Pyv5hzR7j6ihmeLkZfrXGxAr5UfSl8CHf+6q/wpiYDkUau0czckpYG8QmnCIuPpdLtuA9VmuGGyMA==
+  dependencies:
+    regenerator-runtime "^0.13.4"
+
 "@babel/standalone@^7.12.6", "@babel/standalone@^7.14.9":
   version "7.15.3"
   resolved "https://registry.yarnpkg.com/@babel/standalone/-/standalone-7.15.3.tgz#60f74273202ffcc6bb1428918053449fe477227c"
@@ -6368,6 +6375,23 @@ gatsby-plugin-facebook-pixel@^1.0.8:
   version "1.0.8"
   resolved "https://registry.yarnpkg.com/gatsby-plugin-facebook-pixel/-/gatsby-plugin-facebook-pixel-1.0.8.tgz#8f5aa6816ddf1cf451c372464fa3f873d7dae288"
   integrity sha512-oJfTMJxAv5AF2sganhtaq3+6GZ2W2s6/RjQxVsRUxUWMxhrtW6YeMsayAh1bVPgVQ8boJ0QyftipXe7fyq4BCA==
+
+gatsby-plugin-google-analytics@^4.4.0:
+  version "4.4.0"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-google-analytics/-/gatsby-plugin-google-analytics-4.4.0.tgz#a4c700b59f5bdb8c8b2276f5e50440d484b14b58"
+  integrity sha512-Z+CW64zo/d1rtyMz1bJ+Ao9apsWeyak5BXNc7piO+FwE7dFdWrAyHrgGmE3YltqFUY8+PS3vmpBv9qn0ZrOSGg==
+  dependencies:
+    "@babel/runtime" "^7.15.4"
+    minimatch "3.0.4"
+    web-vitals "^1.1.2"
+
+gatsby-plugin-google-tagmanager@^4.4.0:
+  version "4.4.0"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-google-tagmanager/-/gatsby-plugin-google-tagmanager-4.4.0.tgz#f3b7b8882bcd3995a4db3f587b7dac86083f1997"
+  integrity sha512-Yr8ySTlFwGr1/c+hf+2h6GyFXzT4JiR+VdF+f4qzCcVclywr7Gi0672TzMdNtNZY+X+bZ2UPP2mj8KVsd/Fd6w==
+  dependencies:
+    "@babel/runtime" "^7.15.4"
+    web-vitals "^1.1.2"
 
 gatsby-plugin-manifest@^2.4.2:
   version "2.12.1"
@@ -13638,6 +13662,11 @@ wbuf@^1.1.0, wbuf@^1.7.3:
   integrity sha512-O84QOnr0icsbFGLS0O3bI5FswxzRr8/gHwWkDlQFskhSPryQXvrTMxjxGP4+iWYoauLoBvfDpkrOauZ+0iZpDA==
   dependencies:
     minimalistic-assert "^1.0.0"
+
+web-vitals@^1.1.2:
+  version "1.1.2"
+  resolved "https://registry.yarnpkg.com/web-vitals/-/web-vitals-1.1.2.tgz#06535308168986096239aa84716e68b4c6ae6d1c"
+  integrity sha512-PFMKIY+bRSXlMxVAQ+m2aw9c/ioUYfDgrYot0YUa+/xa0sakubWhSDyxAKwzymvXVdF4CZI71g06W+mqhzu6ig==
 
 webpack-dev-middleware@^3.7.2:
   version "3.7.3"

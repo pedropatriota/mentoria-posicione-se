@@ -71,7 +71,7 @@ function FormData() {
             onSubmit={handleSubmit}
             validateOnBlur={false}
           >
-            {({ values }) => {
+            {() => {
               return (
                 <Form
                   style={{ width: '100%' }}
