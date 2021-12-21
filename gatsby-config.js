@@ -1,0 +1,216 @@
+module.exports = {
+  siteMetadata: {
+    title: `Clínica Allure`,
+    description: `Clínica Especializada em Cirúrgia Plástica, Oftamololgia e Nutrologia.`,
+    author: {
+      name: `Dr. Gustavo Costa`,
+      crm: 'CRMRJ - 847100',
+    },
+    siteUrl: 'https://www.allure.med.br',
+
+    info: {
+      tel: '(24)3336-1761',
+      urlTel: 'tel.:+552433361761',
+      whats: '(24)99947520',
+      email: 'clinicaallure@outlook.com',
+      urlEmail: 'mailto:clinicaallure@outlook.com',
+      urlWhats: 'https://wa.me/5524999947520',
+      address:
+        'R. Trinta e Três, 164 - Vila Santa Cecília, Volta Redonda - RJ, 27261-310',
+      urlAddress: 'https://goo.gl/maps/dZUJRuubmu9RC9F48',
+      iframeAddress:
+        'https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14741.953251778763!2d-44.102466!3d-22.5233735!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x52103228b2e2afbe!2sAllure!5e0!3m2!1spt-BR!2sbr!4v1627524130643!5m2!1spt-BR!2sbr',
+      instagram: `https://www.instagram.com/dr.gustavo_costa/`,
+      facebook: `https://pt-br.facebook.com/drgustavocosta/`,
+    },
+
+    procedimentos: [
+      {
+        id: 1,
+        title: 'Implante Capilar',
+        image: `/proc01.png`,
+        description: `O implante consiste na retirada de folículos capilares saudáveis de uma região da cabeça e sua implantação na área em que há calvície.`,
+      },
+      {
+        id: 2,
+        title: 'Lipoaspiração',
+        image: `/proc02.png`,
+        description: `Cirurgia indicada para remover o excesso de gordura, melhorando a proporção do corpo.`,
+      },
+      {
+        id: 3,
+        title: 'Blefaroplastia',
+        image: `/proc03.png`,
+        description: `Cirugia indicada para eliminar bolsas de gordura e flacidez na região em torno dos olhos.`,
+      },
+      {
+        id: 4,
+        title: 'Abdominoplastia',
+        image: `/proc04.png`,
+        description: `Cirurgia indicada para remoção da da flacidez da região abdominal inferior, através ressecção do excesso de pele.`,
+      },
+      {
+        id: 5,
+        title: 'Mastopxia',
+        image: `/proc05.png`,
+        icon: '/mastopxia.png',
+        description: `Cirurgia indicada para reposicionar a aréola e o tecido mamário, para compor o novo contorno da mama.`,
+      },
+
+      {
+        id: 6,
+        title: 'Implante Mamário',
+        image: `/proc06.png`,
+        description: `Os implantes são utilizados para dar volume a várias regiões do corpo, como seios e glúteos, por exemplo.`,
+      },
+      {
+        id: 7,
+        title: 'Otoplastia',
+        image: `/proc07.png`,
+        description: `Cirurgia indicada para melhorar o posicionamento e as proporções das orelhas.`,
+      },
+      {
+        id: 8,
+        title: 'Rinoplastia',
+        image: `/proc08.png`,
+        description: `Cirurgia indicada para remodelar a proporção do nariz, além de poder corrigir dificuldade respiratória.`,
+      },
+      {
+        id: 9,
+        title: 'Clínica Allure',
+        image: `/proc09.png`,
+        description: `R. Trinta e Três, 164 - Vila Santa Cecília, Volta Redonda - RJ, 27261-310`,
+      },
+    ],
+  },
+  plugins: [
+    `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-anchor-links`,
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        // The property ID; the tracking code won't be generated without it
+        trackingId: 'UA-215638171-1',
+        // Defines where to place the tracking script - `true` in the head and `false` in the body
+        head: false,
+        // Setting this parameter is optional
+        anonymize: true,
+        // Setting this parameter is also optional
+        respectDNT: true,
+        // Avoids sending pageview hits from custom paths
+        // exclude: ['/preview/**', '/do-not-track/me/too/'],
+        // Delays sending pageview hits on route update (in milliseconds)
+        pageTransitionDelay: 0,
+        // Enables Google Optimize using your container Id
+        // optimizeId: "YOUR_GOOGLE_OPTIMIZE_TRACKING_ID",
+        // Enables Google Optimize Experiment ID
+        // experimentId: "YOUR_GOOGLE_EXPERIMENT_ID",
+        // Set Variation ID. 0 for original 1,2,3....
+        // variationId: "YOUR_GOOGLE_OPTIMIZE_VARIATION_ID",
+        // Defers execution of google analytics script after page load
+        defer: false,
+        // Any additional optional fields
+        sampleRate: 5,
+        siteSpeedSampleRate: 10,
+        // cookieDomain: "example.com",
+        // defaults to false
+        enableWebVitalsTracking: true,
+      },
+    },
+    {
+      resolve: 'gatsby-plugin-google-tagmanager',
+      options: {
+        id: 'GTM-KPVLJ4B',
+
+        includeInDevelopment: false,
+
+        defaultDataLayer: { platform: 'gatsby' },
+
+        // gtmAuth: 'YOUR_GOOGLE_TAGMANAGER_ENVIRONMENT_AUTH_STRING',
+        // gtmPreview: 'YOUR_GOOGLE_TAGMANAGER_ENVIRONMENT_PREVIEW_NAME',
+        // dataLayerName: 'YOUR_DATA_LAYER_NAME',
+
+        routeChangeEventName: 'Allure_Event',
+        // Defaults to false
+        enableWebVitalsTracking: true,
+        // Defaults to https://www.googletagmanager.com
+        // selfHostedOrigin: 'YOUR_SELF_HOSTED_ORIGIN',
+      },
+    },
+    {
+      resolve: `gatsby-plugin-facebook-pixel`,
+      options: {
+        pixelId: '1214612195706304',
+      },
+    },
+    {
+      resolve: `gatsby-plugin-scroll-reveal`,
+      options: {
+        threshold: 0.1, // Percentage of an element's area that needs to be visible to launch animation
+        once: true, // Defines if animation needs to be launched once
+        disable: false, // Flag for disabling animations
+
+        // Advanced Options
+        selector: '[data-sal]', // Selector of the elements to be animated
+        animateClassName: 'sal-animate', // Class name which triggers animation
+        disabledClassName: 'sal-disabled', // Class name which defines the disabled state
+        rootMargin: '0% 50%', // Corresponds to root's bounding box margin
+        enterEventName: 'sal:in', // Enter event name
+        exitEventName: 'sal:out', // Exit event name
+      },
+    },
+
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `backgrounds`,
+        path: `${__dirname}/src/images/slider`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `logos`,
+        path: `${__dirname}/src/images/logos`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `clinica`,
+        path: `${__dirname}/src/images/clinica`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `images`,
+        path: `${__dirname}/src/images`,
+      },
+    },
+    {
+      resolve: `gatsby-plugin-styled-components`,
+      options: {
+        displayName: true,
+      },
+    },
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-sharp`,
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `Clinica Allure`,
+        short_name: `Clinica Allure`,
+        start_url: `/`,
+        background_color: `#f9f9f9`,
+        theme_color: `#f9f9f9`,
+        display: `minimal-ui`,
+        icon: `src/images/logos/logo_preta.png`, // This path is relative to the root of the site.
+      },
+    },
+    `gatsby-plugin-sitemap`,
+    // this (optional) plugin enables Progressive Web App + Offline functionality
+    // To learn more, visit: https://gatsby.dev/offline
+    `gatsby-plugin-offline`,
+  ],
+}
