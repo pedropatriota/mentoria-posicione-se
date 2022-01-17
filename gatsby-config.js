@@ -91,12 +91,6 @@ module.exports = {
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-anchor-links`,
     {
-      resolve: `gatsby-plugin-env-variables`,
-      options: {
-        allowList: ['GA_TRACKING_ID'],
-      },
-    },
-    {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
         trackingId: 'UA-215638171-1',
