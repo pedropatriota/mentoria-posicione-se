@@ -101,8 +101,6 @@ module.exports = {
       options: {
         id: 'GTM-KPVLJ4B',
         includeInDevelopment: false,
-        defaultDataLayer: { platform: 'gatsby' },
-        routeChangeEventName: 'Allure_Event',
       },
     },
     {
