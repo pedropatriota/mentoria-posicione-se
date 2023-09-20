@@ -32,7 +32,7 @@ function FormData() {
       'Content-Type': 'application/x-www-form-urlencoded',
     }
     const body = encode({
-      'form-name': 'allureForm',
+      'form-name': 'camillaForm',
       ...values,
     })
     axios
@@ -50,10 +50,10 @@ function FormData() {
         )
         actions.resetForm()
       })
-      .finally(() => {
-        window.location.replace =
-          'https://chat.whatsapp.com/EjkCh65xkKO2kxd1nWPYqF'
-      })
+    //   .finally(() => {
+    //     window.location.replace =
+    //       'https://chat.whatsapp.com/EjkCh65xkKO2kxd1nWPYqF'
+    //   })
   }
 
   return (

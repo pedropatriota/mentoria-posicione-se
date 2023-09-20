@@ -121,8 +121,8 @@ export const ReusableCard = css`
 
 export const CardFront = styled.div`
   ${ReusableCard}
-  width: 240px;
-  height: 280px;
+  width: 100%;
+  height: 100%;
 
   div {
     box-shadow: 10px 6px 5px -3px rgba(0, 0, 0, 0.75);
