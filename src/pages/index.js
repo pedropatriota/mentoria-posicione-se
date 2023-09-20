@@ -9,6 +9,7 @@ import ClinicHeader from '../components/Clinic/HeaderSection'
 import ImagesGrid from '../components/Clinic/ImagesGrid'
 import FAQ from '../components/Faq'
 import Who from '../components/Who'
+// import logo from '../images/logo.svg'
 import Logo from '../components/Logo/logo'
 
 const IndexPage = () => {
@@ -38,6 +39,7 @@ const IndexPage = () => {
         image={site.siteMetadata.image}
       />
       <Logo />
+      {/* <img src={logo} width={500} alt='logo' style={{ margin: '0 auto' }} /> */}
       <Who />
       <Procedures />
       <Curriculo />
