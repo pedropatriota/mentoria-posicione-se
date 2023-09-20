@@ -50,6 +50,10 @@ function FormData() {
         )
         actions.resetForm()
       })
+      .finally(() => {
+        window.location.replace =
+          'https://chat.whatsapp.com/EjkCh65xkKO2kxd1nWPYqF'
+      })
   }
 
   return (
