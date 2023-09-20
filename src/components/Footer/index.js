@@ -2,8 +2,6 @@
 import React from 'react'
 import { useStaticQuery, graphql } from 'gatsby'
 import Img from 'gatsby-image'
-import mail from '../../images/icons/email.svg'
-import fb from '../../images/social/fb.png'
 import ig from '../../images/social/ig.png'
 import * as S from './style'
 
@@ -13,7 +11,7 @@ export default (props) => {
       allFile(
         filter: {
           sourceInstanceName: { eq: "logos" }
-          relativePath: { eq: "Logo_Allure.png" }
+          relativePath: { eq: "logo-header.png" }
         }
       ) {
         nodes {
@@ -35,9 +33,6 @@ export default (props) => {
         </S.ImageWrapper>
 
         <S.Social>
-          <a href={props.facebook} target='_blank' rel='noreferrer'>
-            <img src={fb} alt='' />
-          </a>
           <a href={props.instagram} target='_blank' rel='noreferrer'>
             <img src={ig} alt='' />
           </a>

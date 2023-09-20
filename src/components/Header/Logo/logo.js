@@ -1,10 +1,9 @@
 /* eslint-disable no-nested-ternary */
 import React from 'react'
 import { useStaticQuery, graphql } from 'gatsby'
-import { isMobileOnly } from 'react-device-detect'
 import * as S from './style'
 
-const Logo = ({ inView }) => {
+const Logo = () => {
   const { allFile } = useStaticQuery(graphql`
     query {
       allFile(
@@ -25,18 +24,7 @@ const Logo = ({ inView }) => {
     }
   `)
 
-  return (
-    <S.Logo
-      inView={inView}
-      fluid={
-        isMobileOnly
-          ? allFile.edges[2].node.childImageSharp.fluid
-          : inView
-          ? allFile.edges[1].node.childImageSharp.fluid
-          : allFile.edges[2].node.childImageSharp.fluid
-      }
-    />
-  )
+  return <S.Logo fluid={allFile.edges[1].node.childImageSharp.fluid} />
 }
 
 export default Logo

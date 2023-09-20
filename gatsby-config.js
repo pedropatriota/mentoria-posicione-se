@@ -4,28 +4,20 @@ require('dotenv').config({
 
 module.exports = {
   siteMetadata: {
-    title: `Clínica Allure`,
-    description: `Clínica Especializada em Cirúrgia Plástica, Oftamololgia e Nutrologia.`,
+    title: `Mentoria Posicione-se`,
+    description: `Eleve Seu Posicionamento Digital para o Próximo Nível! Você irá transformar não apenas sua presença online, mas também sua confiança, seu impacto e suas perspectivas. Você descobrirá como criar uma marca pessoal forte que ressoa com seu público, atraindo seguidores leais e oportunidades incríveis.`,
     author: {
-      name: `Dr. Gustavo Costa`,
-      crm: 'CRMRJ - 847100',
+      name: `Camilla Gomes`,
+      slogan: 'Mulheres em destaque',
     },
-    siteUrl: 'https://www.allure.med.br',
+    siteUrl: `https://ampliamed.com`,
 
     info: {
-      tel: '(24)3336-1761',
-      urlTel: 'tel.:+552433361761',
-      whats: '(24)99947520',
-      email: 'clinicaallure@outlook.com',
-      urlEmail: 'mailto:clinicaallure@outlook.com',
-      urlWhats: 'https://wa.me/5524999947520',
-      address:
-        'R. Trinta e Três, 164 - Vila Santa Cecília, Volta Redonda - RJ, 27261-310',
-      urlAddress: 'https://goo.gl/maps/dZUJRuubmu9RC9F48',
-      iframeAddress:
-        'https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14741.953251778763!2d-44.102466!3d-22.5233735!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x52103228b2e2afbe!2sAllure!5e0!3m2!1spt-BR!2sbr!4v1627524130643!5m2!1spt-BR!2sbr',
-      instagram: `https://www.instagram.com/dr.gustavo_costa/`,
-      facebook: `https://pt-br.facebook.com/drgustavocosta/`,
+      whats: '(24)99936-5490',
+      email: 'stephaniecamillags@gmail.com',
+      urlEmail: 'mailto:stephaniecamillags@gmail.com',
+      urlWhats: 'https://wa.me/5524999365490',
+      instagram: `https://www.instagram.com/camillagomesgs/`,
     },
 
     procedimentos: [
@@ -165,18 +157,16 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Clinica Allure`,
-        short_name: `Clinica Allure`,
-        start_url: `/`,
+        name: `Camilla Gomes`,
+        short_name: `Camilla Gomes`,
+        start_url: `/https://www.ampliamed.com`,
         background_color: `#f9f9f9`,
         theme_color: `#f9f9f9`,
         display: `minimal-ui`,
-        icon: `src/images/logos/logo_preta.png`, // This path is relative to the root of the site.
+        icon: `src/images/logos/logo-header.png`, // This path is relative to the root of the site.
       },
     },
     `gatsby-plugin-sitemap`,
-    // this (optional) plugin enables Progressive Web App + Offline functionality
-    // To learn more, visit: https://gatsby.dev/offline
     `gatsby-plugin-offline`,
   ],
 }

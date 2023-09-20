@@ -1,6 +1,6 @@
 import React from 'react'
 import { useStaticQuery, graphql } from 'gatsby'
-
+import Logo from './Logo/logo'
 import * as S from './style'
 
 export default () => {
@@ -28,6 +28,7 @@ export default () => {
       data-sal-duration='1000'
       data-sal-easing='ease'
     >
+      <Logo />
       <h2> Principais Procedimentos</h2>
       <S.Cards>
         {procedimentos.map((item) => (

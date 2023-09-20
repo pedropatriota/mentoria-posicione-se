@@ -7,7 +7,7 @@ import GlobalStyle from '../style/globalStyle'
 import SEO from '../components/seo'
 import ClinicHeader from '../components/Clinic/HeaderSection'
 import ImagesGrid from '../components/Clinic/ImagesGrid'
-import WhereWeAre from '../components/WhereWeAre'
+import FAQ from '../components/Faq'
 
 const IndexPage = () => {
   const { site } = useStaticQuery(
@@ -39,7 +39,7 @@ const IndexPage = () => {
       <Curriculo />
       <ClinicHeader />
       <ImagesGrid />
-      <WhereWeAre />
+      <FAQ />
     </Layout>
   )
 }

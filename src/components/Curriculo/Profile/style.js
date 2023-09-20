@@ -28,9 +28,7 @@ export const ImageWrapper = styled.div`
     }
 
     p {
-      text-transform: uppercase;
       font-size: 18px;
-      font-weight: bold;
       line-height: 23px;
       letter-spacing: 0.06em;
       text-align: left;

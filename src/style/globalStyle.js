@@ -43,7 +43,7 @@ export default createGlobalStyle`
 html, body, #root {
   height: 100vh;
   width: 100%;
-  background: #f9f9f9;
+  background: #363636;
 
   body {
     -webkit-font-smoothing: antialiased;
@@ -52,14 +52,14 @@ html, body, #root {
   body, input, button,li{
     font-size: 14px ;
     font-family: 'Lora', sans-serif;
-    color: #222;
+    color: #fff;
   }
 
-  h2{
+  h2,p{
     font-family: 'Philosopher', sans-serif !important;
-    color: #222 !important;
+    color: #fff !important;
   }
- 
+
 
   a {
     text-decoration: none;

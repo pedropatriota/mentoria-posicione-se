@@ -4,14 +4,7 @@ import styled, { css } from 'styled-components'
 
 export const SliderWrapper = styled.div`
   width: 100%;
-  margin-top: 30px;
 
-  @media (min-width: 480px) {
-    margin-top: 60px;
-  }
-  @media (min-width: 620px) {
-    margin-top: 100px;
-  }
   h2 {
     font-size: 25px;
     font-weight: 600;

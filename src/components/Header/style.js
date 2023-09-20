@@ -16,12 +16,12 @@ export const Header = styled.header`
     box-shadow: ${(props) =>
       props.inView ? 'none' : '0px 2px 20px rgba(0, 0, 0, 0.16)'};
     padding: ${(props) =>
-      props.inView ? '10px 70px 10px 55px' : '10px 80px 10px 55px'};
+      props.inView ? '10px 70px 10px 20px' : '10px 80px 10px 55px'};
     flex-direction: row;
     align-items: center;
     position: fixed !important;
     left: 0;
     transition: 0.3s ease-in;
-    z-index: 999;
+    z-index: 3;
   }
 `

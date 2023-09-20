@@ -3,17 +3,12 @@ import styled from 'styled-components'
 
 export const Footer = styled.footer`
   width: 100%;
-  background: #efe1aa;
+  background: #242323;
   padding: 20px 10px;
   display: flex;
   height: auto;
   align-items: flex-end;
   justify-content: space-between;
-
-  @media (min-width: 620px) {
-    padding: 0 65px 40px 65px;
-    padding-top: 200px;
-  }
 `
 
 export const ImageWrapper = styled.div`

@@ -60,11 +60,15 @@ function FormData() {
       data-sal-duration='1000'
       data-sal-easing='ease'
     >
-      <h2> Contato </h2>
-
       <S.Wrapper>
         <S.FormWrapper>
-          <p>Deixe sua mensagem!</p>
+          <h2>Eleve Seu Posicionamento Digital para o Próximo Nível!</h2>
+          <p>
+            Você irá transformar não apenas sua presença online, mas também sua
+            confiança, seu impacto e suas perspectivas. Você descobrirá como
+            criar uma marca pessoal forte que ressoa com seu público, atraindo
+            seguidores leais e oportunidades incríveis.
+          </p>
           <Formik
             initialValues={initialValues}
             validationSchema={validationSchema}
@@ -93,11 +97,11 @@ function FormData() {
                   </div>
 
                   <div>
-                    <Field as='textarea' name='Mensagem' />
-                    <ErrorMessage name='Mensagem' component='div' />
+                    <Field name='WhatsApp' placeholder='WhatsApp' />
+                    <ErrorMessage name='WhatsApp' component='div' />
                   </div>
 
-                  <S.Button type='submit'>enviar mensagem</S.Button>
+                  <S.Button type='submit'>Entrar para lista VIP</S.Button>
                 </Form>
               )
             }}

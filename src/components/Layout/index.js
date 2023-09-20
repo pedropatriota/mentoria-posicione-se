@@ -6,7 +6,6 @@ import 'react-toastify/dist/ReactToastify.min.css'
 
 import Header from '../Header'
 import Banner from '../Banner'
-import Form from '../Form'
 import Footer from '../Footer'
 import CopyWrite from '../CopyWrite'
 
@@ -26,35 +25,28 @@ function Layout({ children }) {
             email
             urlEmail
             instagram
-            facebook
           }
         }
       }
     }
   `)
 
-  const { email, urlEmail, instagram, facebook } = data.site.siteMetadata.info
+  const { email, urlEmail, instagram } = data.site.siteMetadata.info
   return (
     <S.Wrapper>
       <Header
         inView={inView}
-        bg={!inView ? '#f9f9f9' : ''}
+        bg={!inView ? '#242323' : ''}
         tColor={!inView ? '#333' : '#f9f9f9'}
         bColor={!inView ? '#333' : '#fff'}
       />
 
       <Banner ref={ref} />
+      {/* <Form /> */}
 
       <main>{children}</main>
 
-      <Form />
-
-      <Footer
-        instagram={instagram}
-        facebook={facebook}
-        email={email}
-        urlEmail={urlEmail}
-      />
+      <Footer instagram={instagram} email={email} urlEmail={urlEmail} />
 
       <CopyWrite />
       <ToastContainer />

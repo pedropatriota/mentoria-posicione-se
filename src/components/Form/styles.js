@@ -1,13 +1,22 @@
 import styled from 'styled-components'
 
 export const Container = styled.div`
-  margin: 0 auto;
-  max-width: 100%;
+  width: 50%;
   display: flex;
   flex-direction: column;
-  background: #efe1aa;
-  position: relative;
-  padding-top: 140px;
+  background: transparent;
+  position: absolute;
+  top: 10%;
+  transform: translateY(-50%);
+  left: 5%;
+  padding: 20px;
+  border-radius: 15px;
+
+  @media (max-width: 980px) {
+    margin: 0 auto;
+    width: 100%;
+    position: relative;
+  }
 
   h2 {
     font-size: 25px;
@@ -30,6 +39,8 @@ export const Wrapper = styled.section`
   align-items: center;
   justify-content: center;
   gap: 125px;
+  z-index: 4;
+  text-align: center;
 `
 
 export const FormWrapper = styled.div`
@@ -39,9 +50,7 @@ export const FormWrapper = styled.div`
   justify-content: flex-start;
   max-width: 540px;
   width: 100%;
-  @media (min-width: 920px) {
-    min-width: 540px;
-  }
+
   form {
     display: flex;
     flex-flow: column;
@@ -56,11 +65,11 @@ export const FormWrapper = styled.div`
     line-height: 30px;
     letter-spacing: 0.06em;
     color: #222;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
   }
 
   div {
-    margin: 22px 0;
+    margin: 10px 0;
     width: 100%;
     display: flex;
     flex-flow: column;
@@ -72,15 +81,10 @@ export const FormWrapper = styled.div`
       padding: 8px;
       width: 100%;
       max-width: 540px;
-      max-width: 540px;
       width: 80%;
       border: 1px solid #e9e9e9;
       box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.16);
       border-radius: 4px;
-
-      @media (min-width: 768px) {
-        width: 100%;
-      }
     }
     input {
       height: 50px;
@@ -93,13 +97,14 @@ export const FormWrapper = styled.div`
 
 export const Button = styled.button`
   height: 50px;
-  width: 60%;
+  max-width: 540px;
+  width: 80%;
   text-transform: uppercase;
   border-radius: 4px;
   background: #a08236;
   border: 1px solid #a08236;
   color: #fff;
-  margin: 20px 0;
+  margin: 20px 0 40px 0;
   transition: 0.3s ease;
   font-family: Nunito;
   font-size: 12px;
@@ -108,10 +113,6 @@ export const Button = styled.button`
   line-height: 16px;
   box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.16);
   transition: 0.3s;
-
-  @media (min-width: 768px) {
-    width: 100%;
-  }
 
   &:hover,
   &:focus {

@@ -7,7 +7,7 @@ import Menu from '../Menu'
 const Header = ({ bg, top, tColor, bColor, hColor, inView }) => (
   <S.Header bg={bg} top={top} inView={inView}>
     <Link to='/'>
-      <Logo inView={inView} />
+      <Logo />
     </Link>
     <Menu tColor={tColor} bColor={bColor} hColor={hColor} />
   </S.Header>

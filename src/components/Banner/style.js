@@ -21,8 +21,13 @@ export const LineDots = styled(HorizontalRule)`
 
 export const Container = styled.div`
   width: 100%;
-  margin-bottom: 50px;
   position: relative;
+
+  div {
+    img {
+      max-width: 100%;
+    }
+  }
 
   .slick-dots {
     bottom: 30px !important;

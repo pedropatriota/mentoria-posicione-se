@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import React from 'react'
 import { useStaticQuery, graphql } from 'gatsby'
 import Doctor from '../ImagemMedico'
@@ -11,14 +12,13 @@ export default () => {
         siteMetadata {
           author {
             name
-            crm
           }
         }
       }
     }
   `)
 
-  const { crm, name } = data.site.siteMetadata.author
+  const { name } = data.site.siteMetadata.author
 
   return (
     <S.ImageWrapper
@@ -30,29 +30,31 @@ export default () => {
       <Doctor />
       <div>
         <h2>{name}</h2>
-        <p>Cirurgião Plástico</p>
-
         <ul>
           <li>
-            <RectPoints /> Graduado em Medicina pela Universidade Severino
-            Sombra – USS.
+            <RectPoints />
+            Graduado em Publicidade e Propaganda pela UniFOA.
           </li>
           <li>
-            <RectPoints /> Residência Médica em Cirurgia Geral na Santa Casa da
-            Misericórdia em Goiânia.
-          </li>
-          <li>
-            <RectPoints /> Residência Médica em Cirurgia Plástica (5 anos) na
-            Santa Casa da Misericórdia em Goiânia.
-          </li>
-
-          <li>
-            <RectPoints /> Membro aspirante da Sociedade Brasileira de Cirurgia
-            Plástica.
+            <RectPoints />
+            CEO e fundadora da Ampliamed. Desde 2016 desenvolvendo médicos e
+            clínicas a expandir sua imagem na internet, através de técnicas de
+            marketing digital.
           </li>
         </ul>
-
-        <S.CRM>{crm}</S.CRM>
+        <p>
+          Especialista em posicionamento digital, dedicada a capacitá-la para o
+          sucesso online. Minha experiência com dezenas de mulheres resultou em
+          multiplicação de faturamento, preços elevados, independência digital e
+          confiança destacada nas redes sociais.
+        </p>
+        <p>
+          Agora, eu estou abrindo as portas do meu nicho para todas as mulheres.
+          É uma honra compartilhar meu conhecimento e experiência com vocês na
+          mentoria "POSICIONE-se". Estou comprometida em capacitá-las para o
+          sucesso digital e estou ansiosa para fazer parte de sua jornada. Vamos
+          brilhar juntas!
+        </p>
       </div>
     </S.ImageWrapper>
   )
