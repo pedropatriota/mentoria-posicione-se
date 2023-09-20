@@ -4,7 +4,7 @@ export const CvWrapper = styled.section`
   width: 100%;
 
   @media (min-width: 620px) {
-    margin: 160px 0;
+    margin: 100px 0 0;
   }
 `
 
