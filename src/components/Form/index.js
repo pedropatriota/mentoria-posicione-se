@@ -18,16 +18,17 @@ function FormData() {
   const initialValues = {
     Nome: '',
     Email: '',
-    Mensagem: '',
+    WhatsApp: '',
   }
 
   const validationSchema = Yup.object().shape({
     Nome: Yup.string().required('Nome é um campo obrigatório'),
     Email: Yup.string().required('E-mail é um campo obrigatório'),
-    Mensagem: Yup.string().required('Mensagem é um campo obrigatório'),
+    WhatsApp: Yup.string().required('WhatsApp é um campo obrigatório'),
   })
 
   const handleSubmit = (values, actions) => {
+    console.log('here')
     const headers = {
       'Content-Type': 'application/x-www-form-urlencoded',
     }
@@ -50,10 +51,6 @@ function FormData() {
         )
         actions.resetForm()
       })
-    //   .finally(() => {
-    //     window.location.replace =
-    //       'https://chat.whatsapp.com/EjkCh65xkKO2kxd1nWPYqF'
-    //   })
   }
 
   return (
