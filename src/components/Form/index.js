@@ -22,9 +22,9 @@ function FormData() {
   }
 
   const validationSchema = Yup.object().shape({
-    Nome: Yup.string().required('Nome é um campo obrigatório'),
-    Email: Yup.string().required('E-mail é um campo obrigatório'),
-    WhatsApp: Yup.string().required('WhatsApp é um campo obrigatório'),
+    // Nome: Yup.string().required('Nome é um campo obrigatório'),
+    // Email: Yup.string().required('E-mail é um campo obrigatório'),
+    // WhatsApp: Yup.string().required('WhatsApp é um campo obrigatório'),
   })
 
   const handleSubmit = (values, actions) => {
@@ -102,7 +102,16 @@ function FormData() {
                     <ErrorMessage name='WhatsApp' component='div' />
                   </div>
 
-                  <S.Button type='submit'>Entrar para lista VIP</S.Button>
+                  <S.Button
+                    type='action'
+                    onClick={() =>
+                      window.location.replace(
+                        'https://chat.whatsapp.com/EjkCh65xkKO2kxd1nWPYqF'
+                      )
+                    }
+                  >
+                    Entrar para lista VIP
+                  </S.Button>
                 </Form>
               )
             }}
