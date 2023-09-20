@@ -17,13 +17,18 @@ export const Container = styled.div`
     }
   }
 
-  p {
-    font-size: 18px;
-    color: #222;
-    text-align: center;
-    font-weight: 400;
-    line-height: 25px;
-    letter-spacing: 0.06em;
-    margin-bottom: 40px;
+  ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 32px;
+
+    li {
+      font-size: 18px;
+      text-align: left;
+      font-weight: 400;
+      line-height: 25px;
+      letter-spacing: 0.06em;
+    }
   }
 `

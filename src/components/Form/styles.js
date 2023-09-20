@@ -13,6 +13,7 @@ export const Container = styled.div`
   border-radius: 15px;
 
   @media (max-width: 980px) {
+    left: 0;
     margin: 0 auto;
     width: 100%;
     position: relative;
@@ -79,6 +80,7 @@ export const FormWrapper = styled.div`
     textarea {
       background: #ffffff;
       padding: 8px;
+      color: #000;
       width: 100%;
       max-width: 540px;
       width: 80%;

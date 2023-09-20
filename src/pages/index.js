@@ -8,6 +8,8 @@ import SEO from '../components/seo'
 import ClinicHeader from '../components/Clinic/HeaderSection'
 import ImagesGrid from '../components/Clinic/ImagesGrid'
 import FAQ from '../components/Faq'
+import Who from '../components/Who'
+import Logo from '../components/Logo/logo'
 
 const IndexPage = () => {
   const { site } = useStaticQuery(
@@ -31,10 +33,12 @@ const IndexPage = () => {
     <Layout>
       <GlobalStyle />
       <SEO
-        title='Home'
+        title='Camilla Gomes'
         description={site.siteMetadata.description}
         image={site.siteMetadata.image}
       />
+      <Logo />
+      <Who />
       <Procedures />
       <Curriculo />
       <ClinicHeader />

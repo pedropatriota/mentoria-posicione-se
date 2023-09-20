@@ -4,6 +4,14 @@ import styled, { css } from 'styled-components'
 
 export const SliderWrapper = styled.div`
   width: 100%;
+  margin-top: 30px;
+
+  @media (min-width: 480px) {
+    margin-top: 60px;
+  }
+  @media (min-width: 620px) {
+    margin-top: 100px;
+  }
 
   h2 {
     font-size: 25px;
@@ -48,7 +56,7 @@ export const Description = styled.div`
   }
 
   p:first-child {
-    font-size: min(20px, 5vw);
+    font-size: min(20px, 7vw);
     font-style: normal;
     font-weight: 900;
     line-height: 27px;
@@ -113,8 +121,30 @@ export const ReusableCard = css`
 
 export const CardFront = styled.div`
   ${ReusableCard}
+  width: 240px;
+  height: 280px;
 
-  img {
+  div {
+    box-shadow: 10px 6px 5px -3px rgba(0, 0, 0, 0.75);
+    background: radial-gradient(
+        ellipse farthest-corner at right bottom,
+        #fedb37 0%,
+        #fdb931 8%,
+        #9f7928 30%,
+        #8a6e2f 40%,
+        transparent 80%
+      ),
+      radial-gradient(
+        ellipse farthest-corner at left top,
+        #ffffff 0%,
+        #ffffac 8%,
+        #d1b464 25%,
+        #5d4a1f 62.5%,
+        #5d4a1f 100%
+      );
+
+    display: grid;
+    place-content: center;
     width: 100%;
     height: 100%;
     border-radius: 4px;
@@ -126,6 +156,7 @@ export const CardBack = styled.div`
   background-color: #2980b9;
   color: white;
   transform: rotateY(180deg);
+  box-shadow: 10px 6px 5px -3px rgba(0, 0, 0, 0.75);
 `
 
 export const Title = styled.div`

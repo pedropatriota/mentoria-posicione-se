@@ -1,6 +1,5 @@
 import React from 'react'
 import { useStaticQuery, graphql } from 'gatsby'
-import Logo from './Logo/logo'
 import * as S from './style'
 
 export default () => {
@@ -28,15 +27,15 @@ export default () => {
       data-sal-duration='1000'
       data-sal-easing='ease'
     >
-      <Logo />
-      <h2> Principais Procedimentos</h2>
+      <h2> O que você vai receber</h2>
       <S.Cards>
         {procedimentos.map((item) => (
           <S.FlipCard key={item.id}>
             <S.CardInner>
               <S.CardFront>
-                <img src={item.image} alt='' />
-                <S.Title>{item.title}</S.Title>
+                <div>
+                  <S.Title>{item.title}</S.Title>
+                </div>
               </S.CardFront>
               <S.CardBack>
                 <S.Description>
