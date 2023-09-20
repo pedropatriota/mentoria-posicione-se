@@ -5,8 +5,8 @@ import Procedures from '../components/Procedures'
 import Curriculo from '../components/Curriculo'
 import GlobalStyle from '../style/globalStyle'
 import SEO from '../components/seo'
-import ClinicHeader from '../components/Clinic/HeaderSection'
-import ImagesGrid from '../components/Clinic/ImagesGrid'
+// import ClinicHeader from '../components/Clinic/HeaderSection'
+// import ImagesGrid from '../components/Clinic/ImagesGrid'
 import FAQ from '../components/Faq'
 import Who from '../components/Who'
 // import logo from '../images/logo.svg'
@@ -43,8 +43,8 @@ const IndexPage = () => {
       <Who />
       <Procedures />
       <Curriculo />
-      <ClinicHeader />
-      <ImagesGrid />
+      {/* <ClinicHeader /> */}
+      {/* <ImagesGrid /> */}
       <FAQ />
     </Layout>
   )

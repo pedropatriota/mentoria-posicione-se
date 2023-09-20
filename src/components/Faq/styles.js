@@ -2,13 +2,13 @@ import styled from 'styled-components'
 
 export const Container = styled.div`
   width: 100%;
-  margin-top: 30px;
+  /* margin-top: 30px; */
 
   @media (min-width: 480px) {
-    margin-top: 60px;
+    /* margin-top: 60px; */
   }
   @media (min-width: 620px) {
-    margin-top: 100px;
+    /* margin-top: 100px; */
   }
   h2 {
     font-size: 25px;

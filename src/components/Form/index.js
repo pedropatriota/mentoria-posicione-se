@@ -79,11 +79,11 @@ function FormData() {
               return (
                 <Form
                   style={{ width: '100%' }}
-                  name='allureForm'
+                  name='camillaForm'
                   data-netlify='true'
                   data-netlify-honeypot='bot-field'
                 >
-                  <Field type='hidden' name='form-name' value='allureForm' />
+                  <Field type='hidden' name='form-name' value='camillaForm' />
                   <Field type='hidden' name='bot-field' />
 
                   <div>
