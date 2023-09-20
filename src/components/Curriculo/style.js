@@ -7,7 +7,6 @@ export const CvWrapper = styled.section`
     margin: 100px 0 0;
   }
 `
-
 export const DescWrapper = styled.div`
   display: flex;
   width: 100%;
