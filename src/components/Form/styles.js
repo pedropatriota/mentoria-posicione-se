@@ -77,6 +77,7 @@ export const FormWrapper = styled.div`
 
     input,
     textarea {
+      color: #000 !important;
       background: #ffffff;
       padding: 8px;
       color: #000;
