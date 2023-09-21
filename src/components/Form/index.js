@@ -62,8 +62,9 @@ function FormData() {
       .finally(() => {
         setTimeout(
           () =>
-            window.location.href ===
-            'https://chat.whatsapp.com/EjkCh65xkKO2kxd1nWPYqF',
+            window.location.replace(
+              'https://chat.whatsapp.com/EjkCh65xkKO2kxd1nWPYqF'
+            ),
           2000
         )
       })
