@@ -10,7 +10,6 @@ export const Ul = styled.ul`
   justify-content: space-between;
   gap: 10px;
   text-transform: uppercase;
-  margin-top: 10px;
   flex-wrap: wrap;
 
   @media (min-width: 620px) {

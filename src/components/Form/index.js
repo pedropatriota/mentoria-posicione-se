@@ -23,13 +23,20 @@ function FormData() {
   }
 
   const validationSchema = Yup.object().shape({
-    // Nome: Yup.string().required('Nome é um campo obrigatório'),
-    // Email: Yup.string().required('E-mail é um campo obrigatório'),
-    // WhatsApp: Yup.string().required('WhatsApp é um campo obrigatório'),
+    Nome: Yup.string().required('Nome é um campo obrigatório'),
+    Email: Yup.string().required('E-mail é um campo obrigatório'),
+    WhatsApp: Yup.string().test(
+      'is-mobile-number',
+      'WhatsApp é obrigatório',
+      (value) => {
+        if (!value) return true
+        const regex = /^(\(\+?\d{2,3}\))?\s?\+?\d{9,13}$/
+        return regex.test(value)
+      }
+    ),
   })
 
   const handleSubmit = (values, actions) => {
-    console.log('here')
     const headers = {
       'Content-Type': 'application/x-www-form-urlencoded',
     }
@@ -77,9 +84,10 @@ function FormData() {
             onSubmit={handleSubmit}
             validateOnBlur={false}
           >
-            {() => {
+            {({ isValid }) => {
               return (
                 <Form
+                  action='POST'
                   style={{ width: '100%' }}
                   name='camillaForm'
                   data-netlify='true'
@@ -104,12 +112,13 @@ function FormData() {
                   </div>
 
                   <S.Button
-                    type='action'
-                    onClick={() =>
-                      window.location.replace(
-                        'https://chat.whatsapp.com/EjkCh65xkKO2kxd1nWPYqF'
-                      )
-                    }
+                    type='submit'
+                    disabled={!isValid}
+                    // onClick={() =>
+                    //   window.location.replace(
+                    //     'https://chat.whatsapp.com/EjkCh65xkKO2kxd1nWPYqF'
+                    //   )
+                    // }
                   >
                     Entrar para lista VIP
                   </S.Button>

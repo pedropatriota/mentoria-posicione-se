@@ -8,6 +8,8 @@ export const Wrapper = styled.div`
   main {
     margin: 0 auto;
     max-width: 90%;
+    padding: 0 20px;
+
     @media (min-width: 620px) {
       max-width: 1025px;
     }

@@ -1,11 +1,10 @@
 import styled from 'styled-components'
-import Img from 'gatsby-image'
 
 export const Container = styled.div`
   display: grid;
   position: relative;
   grid-template-columns: repeat(1, 1fr);
-  gap: 10px;  
+  gap: 10px;
   margin: 0 auto 30px auto;
 
   @media (min-width: 620px) {
@@ -14,7 +13,7 @@ export const Container = styled.div`
   }
 `
 
-export const Image = styled(Img)`
+export const Image = styled.img`
   max-width: 100%;
   height: auto;
   transition: transform 0.5s ease;

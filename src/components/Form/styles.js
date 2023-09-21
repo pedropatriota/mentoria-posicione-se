@@ -58,7 +58,6 @@ export const FormWrapper = styled.div`
     align-items: center;
   }
   p {
-    font-size: 16px;
     font-style: normal;
     width: 100%;
     font-weight: 400;
@@ -120,6 +119,11 @@ export const Button = styled.button`
   &:focus {
     background: #7d6424;
     color: #fff;
+  }
+
+  &:disabled {
+    cursor: not-allowed;
+    background: #ccc;
   }
 `
 export const Img = styled.div`

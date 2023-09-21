@@ -20,7 +20,7 @@ export const ImageWrapper = styled.div`
     }
 
     h2 {
-      font-size: 48px;
+      font-size: 25px;
       font-weight: 600;
       line-height: 72px;
       letter-spacing: 0.06em;
@@ -33,6 +33,7 @@ export const ImageWrapper = styled.div`
       letter-spacing: 0.06em;
       text-align: left;
       margin-bottom: 40px;
+      font-family: 'Lora' sans-serif;
     }
 
     li {

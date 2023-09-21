@@ -2,6 +2,7 @@ import styled from 'styled-components'
 
 export const Container = styled.div`
   width: 100%;
+  position: relative;
 
   h2 {
     font-size: 25px;
@@ -30,5 +31,19 @@ export const Container = styled.div`
       line-height: 25px;
       letter-spacing: 0.06em;
     }
+  }
+`
+
+export const KeyContainer = styled.div`
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  opacity: 0.2;
+
+  img {
+    max-width: 100%;
+    height: auto;
   }
 `

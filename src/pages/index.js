@@ -5,12 +5,11 @@ import Procedures from '../components/Procedures'
 import Curriculo from '../components/Curriculo'
 import GlobalStyle from '../style/globalStyle'
 import SEO from '../components/seo'
-// import ClinicHeader from '../components/Clinic/HeaderSection'
-// import ImagesGrid from '../components/Clinic/ImagesGrid'
 import FAQ from '../components/Faq'
 import Who from '../components/Who'
-// import logo from '../images/logo.svg'
-import Logo from '../components/Logo/logo'
+import logo from '../images/logo.svg'
+import ClinicHeader from '../components/Clinic/HeaderSection'
+import ImagesGrid from '../components/Clinic/ImagesGrid'
 
 const IndexPage = () => {
   const { site } = useStaticQuery(
@@ -38,13 +37,14 @@ const IndexPage = () => {
         description={site.siteMetadata.description}
         image={site.siteMetadata.image}
       />
-      <Logo />
-      {/* <img src={logo} width={500} alt='logo' style={{ margin: '0 auto' }} /> */}
+      <div style={{ display: 'grid', placeContent: 'center' }}>
+        <img src={logo} alt='logo' width='100%' />
+      </div>
       <Who />
       <Procedures />
       <Curriculo />
-      {/* <ClinicHeader /> */}
-      {/* <ImagesGrid /> */}
+      <ClinicHeader />
+      <ImagesGrid />
       <FAQ />
     </Layout>
   )

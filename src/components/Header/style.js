@@ -5,7 +5,7 @@ export const Header = styled.header`
   width: 100%;
   max-height: 200px;
   padding: 10px 10px;
-  background: #ededed;
+  background: #000;
   display: flex;
   flex-direction: column;
   align-items: flex-start;

@@ -1,5 +1,6 @@
 /* eslint-disable react/no-unescaped-entities */
 import React from 'react'
+import key from '../../images/key.svg'
 import RectPoints from '../Curriculo/Profile/RectPoints'
 import * as S from './styles'
 
@@ -54,6 +55,9 @@ function Who() {
           </span>
         </li>
       </ul>
+      <S.KeyContainer>
+        <img src={key} alt='chave' />
+      </S.KeyContainer>
     </S.Container>
   )
 }

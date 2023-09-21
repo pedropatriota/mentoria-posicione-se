@@ -1,28 +1,13 @@
 import React from 'react'
-import { useStaticQuery, graphql } from 'gatsby'
+import d01 from '../../../images/d01.svg'
+import d02 from '../../../images/d02.svg'
+import d03 from '../../../images/d03.svg'
+import d04 from '../../../images/d04.svg'
 
 import * as S from './styles'
 
 function ImagesGrid() {
-  const data = useStaticQuery(graphql`
-    query {
-      clinic: allFile(
-        filter: { sourceInstanceName: { eq: "clinica" } }
-        sort: { fields: name }
-      ) {
-        nodes {
-          name
-          relativePath
-          id
-          childImageSharp {
-            fluid(quality: 100, maxWidth: 945) {
-              ...GatsbyImageSharpFluid
-            }
-          }
-        }
-      }
-    }
-  `)
+  const images = [d01, d02, d03, d04]
 
   return (
     <S.Container
@@ -31,9 +16,9 @@ function ImagesGrid() {
       data-sal-duration='1000'
       data-sal-easing='ease'
     >
-      {data.clinic.nodes.map((img) => (
-        <S.ImgClinic key={img.id}>
-          <S.Image fluid={img.childImageSharp.fluid} />
+      {images.map((img) => (
+        <S.ImgClinic key={img}>
+          <S.Image src={img} />
         </S.ImgClinic>
       ))}
     </S.Container>

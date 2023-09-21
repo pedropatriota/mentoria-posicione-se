@@ -49,15 +49,16 @@ html, body, #root {
     -webkit-font-smoothing: antialiased;
   }
 
-  body, input, button,li{
-    font-size: 14px ;
+  body, input, button,li, p, span{
+    font-size: 18px ;
     font-family: 'Lora', sans-serif;
-    color: #fff;
+    color: #fff !important;
   }
 
-  h2,p{
+  h2{
     font-family: 'Philosopher', sans-serif !important;
     color: #fff !important;
+    font-size: 25px;
   }
 
 

@@ -10,11 +10,8 @@ function HeaderSection() {
       data-sal-duration='1000'
       data-sal-easing='ease'
     >
-      <h2>A Clínica</h2>
-      <p>
-        Conheça nosso espaço, desenhado para receber você com qualidade e
-        conforto.
-      </p>
+      <h2>Depoimentos</h2>
+      <p>Veja o que que minhas alunas dizem</p>
     </S.Container>
   )
 }

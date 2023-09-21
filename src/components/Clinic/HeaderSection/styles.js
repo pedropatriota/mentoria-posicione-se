@@ -25,5 +25,6 @@ export const Container = styled.div`
     line-height: 25px;
     letter-spacing: 0.06em;
     margin-bottom: 40px;
+    font-family: 'Lora' sans-serif;
   }
 `
