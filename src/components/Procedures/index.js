@@ -28,20 +28,6 @@ export default () => {
       data-sal-easing='ease'
     >
       <h2> O que você vai receber</h2>
-      {/* <S.Cards>
-        {procedimentos.map((item) => (
-          <S.FlipCard key={item.id}>
-            <S.CardInner>
-              <S.CardBack>
-                <S.Description>
-                  <p>{item.title}</p>
-                  <p>{item.description}</p>
-                </S.Description>
-              </S.CardBack>
-            </S.CardInner>
-          </S.FlipCard>
-        ))}
-      </S.Cards> */}
 
       <S.CardsContainer>
         {procedimentos.map(({ id, title, description }) => (

@@ -23,9 +23,9 @@ module.exports = {
     procedimentos: [
       {
         id: 1,
-        title: '8 Encontros Impactantes',
+        title: '7 Encontros Impactantes',
         image: `/proc01.png`,
-        description: `Participação em oito encontros que guiarão sua jornada de transformação digital, proporcionando aprendizado prático e progresso mensurável.`,
+        description: `Participação em sete encontros que guiarão sua jornada de transformação digital, proporcionando aprendizado prático e progresso mensurável.`,
       },
       {
         id: 2,
