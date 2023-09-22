@@ -25,15 +25,20 @@ const Banner = React.forwardRef((props, ref) => {
     customPaging: (i) => <S.LineDots>{i + 1}</S.LineDots>,
   }
 
+  const [image, setImage] = React.useState(header)
+
+  React.useEffect(() => {
+    if (isMobile) {
+      return setImage(headerMobile)
+    }
+    return setImage(header)
+  }, [isMobile])
+
   return (
     <S.Container ref={ref}>
       <Slider {...settings} className='overflow-hidden'>
         <div>
-          {isMobile ? (
-            <img src={headerMobile} alt='header2' />
-          ) : (
-            <img src={header} alt='header' />
-          )}
+          <img src={image} alt='header' />
         </div>
       </Slider>
       <FormData />
