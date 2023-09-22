@@ -4,7 +4,9 @@ import React from 'react'
 import Slider from 'react-slick'
 import 'slick-carousel/slick/slick.css'
 import 'slick-carousel/slick/slick-theme.css'
-import logo from '../../images/slider/head01.svg'
+import { isMobile } from 'react-device-detect'
+import header from '../../images/slider/head01.svg'
+import headerMobile from '../../images/header2.svg'
 import * as S from './style'
 import FormData from '../Form'
 
@@ -27,7 +29,11 @@ const Banner = React.forwardRef((props, ref) => {
     <S.Container ref={ref}>
       <Slider {...settings} className='overflow-hidden'>
         <div>
-          <img src={logo} alt='logo' />
+          {isMobile ? (
+            <img src={headerMobile} alt='header2' />
+          ) : (
+            <img src={header} alt='header' />
+          )}
         </div>
       </Slider>
       <FormData />

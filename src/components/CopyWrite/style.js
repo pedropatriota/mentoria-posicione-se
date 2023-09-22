@@ -13,13 +13,15 @@ export const Copy = styled.div`
   @media (min-width: 768px) {
     padding: 0 65px;
   }
-  a {
-    color: #fff;
-    text-transform: uppercase;
-    font-weight: 600;
-    transition: 0.3s;
-    &:hover {
-      color: #222;
+  span {
+    font-size: 14px;
+    a {
+      color: #fff;
+      transition: 0.3s;
+      font-size: 14px;
+      &:hover {
+        color: #222;
+      }
     }
   }
 `
