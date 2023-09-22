@@ -23,7 +23,7 @@ export default () => {
     <S.SliderWrapper
       id='procedimentos'
       data-sal='slide-up'
-      data-sal-delay='300'
+      data-sal-delay='100'
       data-sal-duration='1000'
       data-sal-easing='ease'
     >
