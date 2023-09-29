@@ -79,7 +79,7 @@ module.exports = {
     //   },
     // },
     {
-      resolve: '@hutsoninc/gatsby-plugin-facebook-pixel',
+      resolve: `gatsby-plugin-facebook-pixel`,
       options: {
         pixelId: '714198784066851',
       },
