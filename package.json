@@ -5,6 +5,7 @@
     "version": "0.1.0",
     "author": "Pedro Polastri by Ampliamed",
     "dependencies": {
+        "@hutsoninc/gatsby-plugin-facebook-pixel": "^3.0.0",
         "axios": "^0.21.1",
         "babel-plugin-styled-components": "^1.10.7",
         "dotenv": "^10.0.0",

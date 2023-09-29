@@ -79,7 +79,7 @@ module.exports = {
     //   },
     // },
     {
-      resolve: `gatsby-plugin-facebook-pixel`,
+      resolve: '@hutsoninc/gatsby-plugin-facebook-pixel',
       options: {
         pixelId: '714198784066851',
       },
@@ -146,7 +146,7 @@ module.exports = {
         background_color: `#f9f9f9`,
         theme_color: `#f9f9f9`,
         display: `minimal-ui`,
-        icon: `/logos/logo-header.png`, // This path is relative to the root of the site.
+        icon: `src/images/logos/logo-header.png`, // This path is relative to the root of the site.
       },
     },
     `gatsby-plugin-sitemap`,
