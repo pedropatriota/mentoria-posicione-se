@@ -65,23 +65,23 @@ module.exports = {
   plugins: [
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-anchor-links`,
-    {
-      resolve: `gatsby-plugin-google-analytics`,
-      options: {
-        trackingId: 'UA-215638171-1',
-      },
-    },
-    {
-      resolve: 'gatsby-plugin-google-tagmanager',
-      options: {
-        id: 'GTM-KPVLJ4B',
-        includeInDevelopment: false,
-      },
-    },
+    // {
+    //   resolve: `gatsby-plugin-google-analytics`,
+    //   options: {
+    //     trackingId: 'UA-215638171-1',
+    //   },
+    // },
+    // {
+    //   resolve: 'gatsby-plugin-google-tagmanager',
+    //   options: {
+    //     id: 'GTM-KPVLJ4B',
+    //     includeInDevelopment: false,
+    //   },
+    // },
     {
       resolve: `gatsby-plugin-facebook-pixel`,
       options: {
-        pixelId: '1214612195706304',
+        pixelId: '714198784066851',
       },
     },
     {
@@ -146,7 +146,7 @@ module.exports = {
         background_color: `#f9f9f9`,
         theme_color: `#f9f9f9`,
         display: `minimal-ui`,
-        icon: `src/images/logos/logo-header.png`, // This path is relative to the root of the site.
+        icon: `/logos/logo-header.png`, // This path is relative to the root of the site.
       },
     },
     `gatsby-plugin-sitemap`,
