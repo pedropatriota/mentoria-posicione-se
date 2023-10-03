@@ -3,7 +3,7 @@ import { useState, useEffect } from 'react'
 
 export function useWindowSize() {
   const isSSR = typeof window !== `undefined`
-  const [size, setSize] = useState(isSSR && window.innerWidth)
+  const [size, setSize] = useState(1200)
 
   useEffect(() => {
     if (isSSR) {
