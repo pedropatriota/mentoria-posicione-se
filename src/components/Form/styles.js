@@ -17,6 +17,7 @@ export const Container = styled.div`
     margin: 0 auto;
     width: 100%;
     position: relative;
+    margin-top: 30px;
   }
 
   h2 {

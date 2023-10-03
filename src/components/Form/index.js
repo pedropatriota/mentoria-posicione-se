@@ -25,15 +25,13 @@ function FormData() {
   const validationSchema = Yup.object().shape({
     Nome: Yup.string().required('Nome é um campo obrigatório'),
     Email: Yup.string().required('E-mail é um campo obrigatório'),
-    WhatsApp: Yup.string().test(
-      'is-mobile-number',
-      'WhatsApp é obrigatório',
-      (value) => {
+    WhatsApp: Yup.string()
+      .required('WhatsApp é um campo obrigatório')
+      .test('is-mobile-number', 'WhatsApp é obrigatório', (value) => {
         if (!value) return true
         const regex = /^(\(\+?\d{2,3}\))?\s?\+?\d{9,13}$/
         return regex.test(value)
-      }
-    ),
+      }),
   })
 
   const handleSubmit = (values, actions) => {
@@ -80,7 +78,7 @@ function FormData() {
     >
       <S.Wrapper>
         <S.FormWrapper>
-          <h2>Eleve Seu Posicionamento Digital para o Próximo Nível!</h2>
+          <h2>Não se sinta mais invisível no mundo digital!</h2>
           <p>
             Você irá transformar não apenas sua presença online, mas também sua
             confiança, seu impacto e suas perspectivas. Você descobrirá como

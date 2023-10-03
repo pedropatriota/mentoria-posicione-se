@@ -7,7 +7,7 @@ export const Ul = styled.ul`
   display: flex;
   width: 100%;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-end;
   gap: 10px;
   text-transform: uppercase;
   flex-wrap: wrap;
