@@ -2,6 +2,6 @@ import styled from 'styled-components'
 import Img from 'gatsby-image'
 
 export const Logo = styled(Img)`
-  width: 134px;
+  width: 100px;
   transition: width 0.3s ease-in-out;
 `

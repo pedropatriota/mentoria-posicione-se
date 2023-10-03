@@ -4,9 +4,8 @@ import React from 'react'
 import Slider from 'react-slick'
 import 'slick-carousel/slick/slick.css'
 import 'slick-carousel/slick/slick-theme.css'
+import { isMobileOnly } from 'react-device-detect'
 import header from '../../images/slider/head01.svg'
-import { useWindowSize } from '../../customHooks/useWidth'
-// import headerMobile from '../../images/header2.svg'
 import * as S from './style'
 import FormData from '../Form'
 
@@ -25,18 +24,16 @@ const Banner = React.forwardRef((props, ref) => {
     customPaging: (i) => <S.LineDots>{i + 1}</S.LineDots>,
   }
 
-  const { size } = useWindowSize()
-
   return (
     <S.Container ref={ref}>
-      {size > 980 && (
+      <FormData />
+      {isMobileOnly ? null : (
         <Slider {...settings} className='overflow-hidden'>
           <div>
             <img src={header} alt='header' />
           </div>
         </Slider>
       )}
-      <FormData />
     </S.Container>
   )
 })

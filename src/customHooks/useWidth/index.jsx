@@ -1,25 +1,25 @@
 /* eslint-disable prettier/prettier */
-import { useState, useEffect } from 'react'
+import React from 'react'
 
 export function useWindowSize() {
-  const isSSR = typeof window !== `undefined`
-  const [size, setSize] = useState(1200)
+  const isSSR = typeof window !== 'undefined'
+  const [windowSize, setWindowSize] = React.useState({
+    width: 1200,
+  })
 
-  useEffect(() => {
-    if (isSSR) {
-      const handleResize = () => {
-        setSize(window.innerWidth)
-      }
-      window.addEventListener('resize', handleResize)
-
-      return () => {
-        window.removeEventListener('resize', handleResize)
-      }
+  const changeWindowSize = React.useCallback(() => {
+    if (!isSSR) {
+      setWindowSize({ width: window.innerWidth, height: window.innerHeight })
     }
-    return null
   }, [isSSR])
 
-  return {
-    size,
-  }
+  React.useEffect(() => {
+    window.addEventListener('resize', changeWindowSize)
+
+    return () => {
+      window.removeEventListener('resize', changeWindowSize)
+    }
+  }, [changeWindowSize])
+
+  return windowSize
 }
