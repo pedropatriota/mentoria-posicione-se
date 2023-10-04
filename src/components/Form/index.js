@@ -83,7 +83,7 @@ function FormData() {
           {isMobileOnly ? (
             <p>
               Você descobrirá como criar uma marca pessoal forte que ressoa com
-              seu público, atraindo seguidores leais e oportunidades incríveis.
+              seu público.
             </p>
           ) : (
             <p>
