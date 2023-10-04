@@ -14,7 +14,6 @@ export const Container = styled.div`
 
   @media (max-width: 980px) {
     left: 0;
-    margin-top: 50px !important;
     width: 100%;
     position: relative;
   }

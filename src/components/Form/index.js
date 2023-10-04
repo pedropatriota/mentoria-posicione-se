@@ -5,6 +5,7 @@ import axios from 'axios'
 import * as Yup from 'yup'
 import { toast } from 'react-toastify'
 
+import { isMobileOnly } from 'react-device-detect'
 import * as S from './styles'
 
 const encode = (values) => {
@@ -79,12 +80,20 @@ function FormData() {
       <S.Wrapper>
         <S.FormWrapper>
           <h2>Não se sinta mais invisível no mundo digital!</h2>
-          <p>
-            Você irá transformar não apenas sua presença online, mas também sua
-            confiança, seu impacto e suas perspectivas. Você descobrirá como
-            criar uma marca pessoal forte que ressoa com seu público, atraindo
-            seguidores leais e oportunidades incríveis.
-          </p>
+          {isMobileOnly ? (
+            <p>
+              Você descobrirá como criar uma marca pessoal forte que ressoa com
+              seu público, atraindo seguidores leais e oportunidades incríveis.
+            </p>
+          ) : (
+            <p>
+              Você irá transformar não apenas sua presença online, mas também
+              sua confiança, seu impacto e suas perspectivas. Você descobrirá
+              como criar uma marca pessoal forte que ressoa com seu público,
+              atraindo seguidores leais e oportunidades incríveis.
+            </p>
+          )}
+
           <Formik
             initialValues={initialValues}
             validationSchema={validationSchema}
