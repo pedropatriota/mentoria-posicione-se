@@ -8,6 +8,8 @@ import { toast } from 'react-toastify'
 import { isMobileOnly } from 'react-device-detect'
 import * as S from './styles'
 
+// Sell
+
 const encode = (values) => {
   return Object.keys(values)
     .map(
@@ -127,15 +129,7 @@ function FormData() {
                     <ErrorMessage name='WhatsApp' component='div' />
                   </div>
 
-                  <S.Button
-                    type='submit'
-                    disabled={!isValid}
-                    // onClick={() =>
-                    //   window.location.replace(
-                    //     'https://chat.whatsapp.com/EjkCh65xkKO2kxd1nWPYqF'
-                    //   )
-                    // }
-                  >
+                  <S.Button type='submit' disabled={!isValid}>
                     Entrar para lista VIP
                   </S.Button>
                 </Form>

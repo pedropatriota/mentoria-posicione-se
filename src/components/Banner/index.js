@@ -5,9 +5,11 @@ import Slider from 'react-slick'
 import 'slick-carousel/slick/slick.css'
 import 'slick-carousel/slick/slick-theme.css'
 import { isMobileOnly } from 'react-device-detect'
-import header from '../../images/slider/head01.svg'
+import header from '../../images/header2.svg'
 import * as S from './style'
 import FormData from '../Form'
+
+// Sell
 
 const Banner = React.forwardRef((props, ref) => {
   const settings = {
@@ -24,9 +26,21 @@ const Banner = React.forwardRef((props, ref) => {
     customPaging: (i) => <S.LineDots>{i + 1}</S.LineDots>,
   }
 
+  const redirectToPay = () => {
+    window.location.replace(
+      'https://pay.hotmart.com/I87110461O?off=mwpkh6pt&bid=1697039722948'
+    )
+  }
+
+  const isForm = false
+
   return (
     <S.Container ref={ref}>
-      <FormData />
+      {isForm ? (
+        <FormData />
+      ) : (
+        <S.Button onClick={redirectToPay}>Fazer parte do Posicione-se</S.Button>
+      )}
       {isMobileOnly ? null : (
         <Slider {...settings} className='overflow-hidden'>
           <div>

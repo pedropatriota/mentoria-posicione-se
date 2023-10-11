@@ -7,7 +7,7 @@ import GlobalStyle from '../style/globalStyle'
 import SEO from '../components/seo'
 import FAQ from '../components/Faq'
 import Who from '../components/Who'
-import logo from '../images/logo.svg'
+// import logo from '../images/logo.svg'
 import ClinicHeader from '../components/Clinic/HeaderSection'
 import ImagesGrid from '../components/Clinic/ImagesGrid'
 
@@ -29,6 +29,8 @@ const IndexPage = () => {
     `
   )
 
+  // Sell
+
   return (
     <Layout>
       <GlobalStyle />
@@ -37,9 +39,9 @@ const IndexPage = () => {
         description={site.siteMetadata.description}
         image={site.siteMetadata.image}
       />
-      <div style={{ display: 'grid', placeContent: 'center' }}>
+      {/* <div style={{ display: 'grid', placeContent: 'center' }}>
         <img src={logo} alt='logo' width='100%' />
-      </div>
+      </div> */}
       <Who />
       <Procedures />
       <Curriculo />

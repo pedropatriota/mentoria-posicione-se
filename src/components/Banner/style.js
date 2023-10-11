@@ -71,3 +71,37 @@ export const Caption = styled.div`
     color: #f9f9f9;
   }
 `
+export const Button = styled.button`
+  top: 55%;
+  left: 10%;
+  height: 50px;
+  position: absolute;
+  z-index: 999;
+  max-width: 540px;
+  width: 80%;
+  text-transform: uppercase;
+  border-radius: 4px;
+  background: #a08236;
+  border: 1px solid #a08236;
+  color: #fff;
+  margin: 20px 0 40px 0;
+  transition: 0.3s ease;
+  font-family: Nunito;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 16px;
+  box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.16);
+  transition: 0.3s;
+
+  &:hover,
+  &:focus {
+    background: #7d6424;
+    color: #fff;
+  }
+
+  &:disabled {
+    cursor: not-allowed;
+    background: #ccc;
+  }
+`
