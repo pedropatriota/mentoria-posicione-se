@@ -4,7 +4,7 @@ import React from 'react'
 import Slider from 'react-slick'
 import 'slick-carousel/slick/slick.css'
 import 'slick-carousel/slick/slick-theme.css'
-import { isMobileOnly } from 'react-device-detect'
+// import { isMobileOnly } from 'react-device-detect'
 import header from '../../images/header2.svg'
 import * as S from './style'
 import FormData from '../Form'
@@ -41,13 +41,13 @@ const Banner = React.forwardRef((props, ref) => {
       ) : (
         <S.Button onClick={redirectToPay}>Fazer parte do Posicione-se</S.Button>
       )}
-      {isMobileOnly ? null : (
-        <Slider {...settings} className='overflow-hidden'>
-          <div>
-            <img src={header} alt='header' />
-          </div>
-        </Slider>
-      )}
+      {/* {isMobileOnly ? null : ( */}
+      <Slider {...settings} className='overflow-hidden'>
+        <div>
+          <img src={header} alt='header' />
+        </div>
+      </Slider>
+      {/* )} */}
     </S.Container>
   )
 })
