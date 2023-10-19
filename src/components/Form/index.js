@@ -8,8 +8,6 @@ import { toast } from 'react-toastify'
 import { isMobileOnly } from 'react-device-detect'
 import * as S from './styles'
 
-// Sell
-
 const encode = (values) => {
   return Object.keys(values)
     .map(
@@ -17,6 +15,8 @@ const encode = (values) => {
     )
     .join('&')
 }
+
+// Sell
 
 function FormData() {
   const initialValues = {
@@ -60,15 +60,15 @@ function FormData() {
         )
         actions.resetForm()
       })
-      .finally(() => {
-        setTimeout(
-          () =>
-            window.location.replace(
-              'https://chat.whatsapp.com/EjkCh65xkKO2kxd1nWPYqF'
-            ),
-          2000
-        )
-      })
+    //   .finally(() => {
+    //     setTimeout(
+    //       () =>
+    //         window.location.replace(
+    //           'https://chat.whatsapp.com/EjkCh65xkKO2kxd1nWPYqF'
+    //         ),
+    //       2000
+    //     )
+    //   })
   }
 
   return (
@@ -84,15 +84,22 @@ function FormData() {
           <h2>Não se sinta mais invisível no mundo digital!</h2>
           {isMobileOnly ? (
             <p>
-              Você descobrirá como criar uma marca pessoal forte que ressoa com
-              seu público.
+              Não perca a oportunidade única de fazer parte da Metoria
+              Posicione-se! Entre para a lista de espera e receba novas
+              informações em primeira mão.
+              {/* Você descobrirá como criar uma marca pessoal forte
+              que ressoa com seu público. */}
             </p>
           ) : (
             <p>
               Você irá transformar não apenas sua presença online, mas também
-              sua confiança, seu impacto e suas perspectivas. Você descobrirá
+              sua confiança, seu impacto e suas perspectivas! Portanto, não
+              perca a oportunidade única de fazer parte da Metoria Posicione-se!
+              Entre para a lista de espera e receba novas informações em
+              primeira mão.
+              {/* Você descobrirá
               como criar uma marca pessoal forte que ressoa com seu público,
-              atraindo seguidores leais e oportunidades incríveis.
+              atraindo seguidores leais e oportunidades incríveis. */}
             </p>
           )}
 
@@ -130,7 +137,7 @@ function FormData() {
                   </div>
 
                   <S.Button type='submit' disabled={!isValid}>
-                    Entrar para lista VIP
+                    Entrar para lista de espera
                   </S.Button>
                 </Form>
               )
